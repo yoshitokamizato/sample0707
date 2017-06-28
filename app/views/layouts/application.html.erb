@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yoshito</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+    <div class="header">
+      <div class="header-logo">Yoshito</div>
+      <div class="header-list">
+        <ul>
+          <li><%= link_to 'プログラミングレッスン', 'programming' %></li>
+          <li><%= link_to 'デザインレッスン', 'design' %></li>
+          <li><%= link_to 'エンジニア養成講座', 'engineer' %></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="main">
+     <%= image_tag '1st.jpg' %>
+    </div>
+    <div class="submain">
+    	<h2 style="margin-top: 0px;">初めまして、神里です。</h2>
+    	<p>ぼくは最近エンジニアに転職し、やっと1ヶ月が経ちました。</p>
+    	<p>まだまだ新米エンジニアですが、これからプログラミングスキルを身につけ、将来はフリープログラマーとして独立したいと考えています。</p>
+    	<p>それでは早速、ぼくが現在どのような活動を行なっているのかをご紹介したいと思います。</p>
+    	<br>
+
+    	<p><%= link_to 'プログラミングレッスン', 'programming' %></p>
+        <p><%= link_to 'デザインレッスン', 'design' %></p>
+        <p><%= link_to 'エンジニア養成講座', 'engineer' %></p>
+
+    </div>
+
+    <div class="contents">
+    	<%= yield %>
+    </div>
+
+    <div class="footer">  
+      
+    </div>
+
+
+
+</body>
+</html>
