@@ -37,15 +37,13 @@ group :development, :test do
   gem 'byebug'
 end
 
-group :development do
-  gem 'web-console', '~> 2.0'
-  gem 'spring'
-  gem 'capistrano',  '~> 3.4.1'
-  gem 'capistrano-safe-deploy-to', '~> 1.1.1'
-  gem 'capistrano-rails'
-  gem 'capistrano-rbenv', '~> 2.0.2'
-  gem 'capistrano-bundler'
-end
+gem 'web-console', '~> 2.0'
+gem 'spring'
+gem 'capistrano',  '~> 3.4.1'
+gem 'capistrano-safe-deploy-to', '~> 1.1.1'
+gem 'capistrano-rails'
+gem 'capistrano-rbenv', '~> 2.0.2'
+gem 'capistrano-bundler'
 
 
 
